@@ -24,6 +24,7 @@ class SmsService
         $this->messageType = config('sms.messageType') === "text" ? 1 : 2;
         $this->template = "";
         $this->receptor = [""];
+        $this->smsType = 'single';
     }
 
     public function to(array $receptor): self
@@ -88,7 +89,7 @@ class SmsService
         return http_build_query($fieldsArray);
     }
 
-    public function dispatch($returnItem = '')
+    public function dispatch($returnItem = ''):string
     {
         $curl = curl_init();
         curl_setopt_array($curl,
