@@ -1,0 +1,19 @@
+{
+    "name": "fibdesign/sms",
+    "description": "a simple way to send your sms with Ghasedak api",
+    "type": "plugin",
+    "autoload": {
+        "psr-4": {
+            "Fibdesign\\Sms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sadegh",
+            "email": "74778568+msghaderi77@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "ext-curl": "*"
+    }
+}
