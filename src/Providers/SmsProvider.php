@@ -18,7 +18,7 @@ class SmsProvider extends ServiceProvider
     private function mergeConfig()
     {
         $path = $this->getConfigPath();
-        $this->mergeConfigFrom($path, 'bar');
+        $this->mergeConfigFrom($path, 'sms');
     }
 
     private function publishConfig()
