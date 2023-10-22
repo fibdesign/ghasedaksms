@@ -16,5 +16,12 @@
     ],
     "require": {
         "ext-curl": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Fibdesign\\Bale\\Providers\\BaleProvider"
+            ]
+        }
     }
 }
